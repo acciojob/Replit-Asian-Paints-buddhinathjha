@@ -1,16 +1,38 @@
 /*  your css code here. If applicable */
+#grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	margin: 20px auto;
+	width: 400px;
+	height: 400px;
+	background-color: #ccc;
+	padding: 20px;
+}
 
-.grid-container {
-    display: grid;
-    margin: 20px;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-  }
-  
-  .grid-item {
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.698);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
+.grid-item {
+	background-color: transparent;
+	font-size: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input[type="color"] {
+	margin-left: 10px;
+}
+
+button {
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
